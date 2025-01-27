@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: beige;
+}
+
+header {
+    background-color: rgb(85, 19, 19);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(85, 19, 19);
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    margin: 0;
+    position: relative;
+    bottom: 0;
+}
+
+h1 a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+h1 a:hover {
+    background-color: black;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/* index- & assignment-page */
+.text-box{
+    line-height: 1.2rem;
+    border: 2px solid rgb(85, 19, 19);
+    background-color: white;
+    padding: 1rem 1.5rem 2rem;
+    margin: 0 1rem 1rem;
+}
+
+
+
+/* större skärmar */
+@media only screen and (min-width: 45rem) {
+
+    /* general settings */
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    /* index-page */
+    .text-box{
+        margin: 0 auto 2rem;
+        max-width: 40rem;
+        padding: 0 2rem;
+        box-shadow: -10px 12px 10px 0px rgba(0, 0, 0, 0.64);
+    }
+
+
+}
