@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    background-color: beige;
+    background-color: rgb(245, 245, 228);
 }
 
 header {
@@ -30,21 +30,47 @@ h1 a:hover {
     background-color: black;
 }
 
-h2 {
+h2,
+h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 1.8rem;
 }
 
-/* index- & assignment-page */
-.text-box{
+/* index-page */
+.text-box {
     line-height: 1.2rem;
-    border: 2px solid rgb(85, 19, 19);
     background-color: white;
     padding: 1rem 1.5rem 2rem;
-    margin: 0 1rem 1rem;
+    margin: 0 auto 1rem;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.635);
 }
 
+#search {
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    display: block;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.192) inset;
+}
+
+.text-box p {
+    font-weight: 700;
+}
+
+/* table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: left;
+}
+
+td {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(85, 19, 19, 0.255);
+}
 
 
 /* större skärmar */
@@ -57,11 +83,8 @@ h2 {
     }
 
     /* index-page */
-    .text-box{
-        margin: 0 auto 2rem;
+    .text-box {
         max-width: 40rem;
-        padding: 0 2rem;
-        box-shadow: -10px 12px 10px 0px rgba(0, 0, 0, 0.64);
     }
 
 
