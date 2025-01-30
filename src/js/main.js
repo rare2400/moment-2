@@ -4,6 +4,9 @@ Av Ramona Reinholdz, rare2400 */
 //hämta data när sidan laddas
 window.onload = () => {
     getData();
+
+    //händelsehanterare för filtrering
+    document.querySelector('#search').addEventListener('input', filterData);
 }
 
 //array för att lagra kurser
@@ -25,6 +28,7 @@ async function getData() {
     }
 }
 
+//funktion för att skriva ut kurser i tabell
 function printCourses(data) {
     const tableEl = document.querySelector('#course-table');
     //töm tabellen
@@ -38,4 +42,16 @@ function printCourses(data) {
         <td>${course.progression}</td>
         </tr>`;
     });
+}
+
+//funktion för att filtrera kurser
+function filterData() {
+    const searchInput = document.querySelector('#search').value;
+
+    //filtrering av kurser och kurskoder
+    const filteredData = courses.filter(course => {
+        return course.coursename.toLowerCase().includes(searchInput.toLowerCase()) || 
+        course.code.toLowerCase().includes(searchInput)
+    });
+    printCourses(filteredData);
 }
