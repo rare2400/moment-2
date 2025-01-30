@@ -11,5 +11,6 @@
   "description": "",
   "devDependencies": {
     "parcel": "^2.13.3"
-  }
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
